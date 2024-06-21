@@ -1,0 +1,17 @@
+
+.animate-scroll {
+    animation: scroll ease-in-out both;
+    animation-timeline: view();
+    animation-range: entry 50% contain 50%;
+}
+
+@keyframes scroll {
+    0% {
+        opacity: 0.25;
+        transform: translateY(100px) scale(70%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(100%);
+    }
+}
